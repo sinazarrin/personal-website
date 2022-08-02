@@ -13,15 +13,15 @@ const Banner = () => {
         <div>
             <div className="w-full h-screen bg-[url('images/sandro-katalina-k1bO_VTiZSs-unsplash.jpg')] bg-cover bg-center relative">
                 <div className='w-full h-full bg-black/25 relative'>
-                    <div className='container mx-auto px-10'>
-                        <nav className=' flex w-full items-baseline flex-wrap p-2 justify-between mx-auto'>
+                    <div className='container mx-auto sm:px-10 px-3'>
+                        <nav className='flex w-full items-baseline flex-wrap p-2 justify-between mx-auto'>
                             <div>
                                 <h1>
                                     <a href="#" className='text-white text-[30px]'>Sinzo.prog</a>
                                 </h1>
                             </div>
 
-                            <ul className='flex space-x-6 '>
+                            <ul className='sm:flex hidden space-x-6 '>
                                 <li>
                                     <a href="#" className="text-white relative group">Home
                                         <div className="absolute left-2 w-2/3 h-0.5 bg-white/80 scale-x-0 group-hover:scale-x-100 transition-transform"></div>
@@ -38,8 +38,8 @@ const Banner = () => {
                         <div className='flex items-baseline justify-between'>
                             <div className='text-white uppercase absolute bottom-[8%] leading-[70px]'>
                                 <p className='lg:text-[50px] md:text-[30px] sm:text-[20px] text-[15px] '>i'm</p>
-                                <h1 className="lg:text-8xl md:text-7xl sm:text-6xl text-5xl ml-[-5px] font-bold custom">sina zarrin</h1>
-                                <h3 className={`${typingEffect ? ' lg:text-[40px] md:text-[30px] sm:text-[20px] text-[15px] font-medium overflow-x-hidden whitespace-nowrap typewriter' : ' text-[40px] font-medium overflow-x-hidden whitespace-nowrap opacity-0'} `}>i help compaines make a beautiful websites</h3>
+                                <h1 className="w-full lg:text-8xl md:text-7xl sm:text-6xl text-4xl ml-[-5px] font-bold custom">sina zarrin</h1>
+                                <h3 className={`${typingEffect ? ' lg:text-[40px] md:text-[30px] sm:text-[20px] text-[15px] font-medium overflow-x-hidden whitespace-nowrap typewriter' : ' text-[40px] font-medium overflow-x-hidden whitespace-nowrap opacity-0'} `}>i Love front End develope ..... </h3>
                             </div>
                         </div>
 
