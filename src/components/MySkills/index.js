@@ -43,7 +43,7 @@ const MySkills = () => {
         </div>
         <div className='flex justify-center sm:flex-row flex-col mt-16'>
           <button type="button" class="bg-white text-[#1b1b1b] sm:py-3.5 sm:px-9 py-2 px-6 sm:mb-0 mb-2 uppercase sm:text-[12px] text-[10px] tracking-[3px] sm:mr-10">Download Resume</button>
-          <button type="button" class="bg-[#B68E52] text-white sm:py-3.5 sm:px-9 py-2 px-6 sm:mb-0 mb-2 uppercase sm:text-[12px] text-[10px] tracking-[3px] ">Contact Me</button>
+          <button type="button" class="bg-violet-500 text-white sm:py-3.5 sm:px-9 py-2 px-6 sm:mb-0 mb-2 uppercase sm:text-[12px] text-[10px] tracking-[3px] ">Contact Me</button>
         </div>
       </div>
     </div>

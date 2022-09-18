@@ -5,7 +5,7 @@ const Banner = () => {
     useEffect(() => {
         setTimeout(() => {
         setTypingEffect(!typingEffect)
-      }, typingEffect === false ? 1000 : 8000)
+      }, typingEffect ? 8000 : 1000)
     }, [typingEffect])
     
 
@@ -36,10 +36,10 @@ const Banner = () => {
                         </nav>
 
                         <div className='flex items-baseline justify-between'>
-                            <div className='text-white uppercase absolute bottom-[8%] leading-[70px]'>
+                            <div className='text-white uppercase absolute left-[5%] bottom-[8%] leading-[70px]'>
                                 <p className='lg:text-[50px] md:text-[30px] sm:text-[20px] text-[15px] '>i'm</p>
-                                <h1 className="w-full lg:text-8xl md:text-7xl sm:text-6xl text-4xl ml-[-5px] font-bold custom">sina zarrin</h1>
-                                <h3 className={`${typingEffect ? ' lg:text-[40px] md:text-[30px] sm:text-[20px] text-[15px] font-medium overflow-x-hidden whitespace-nowrap typewriter' : ' text-[40px] font-medium overflow-x-hidden whitespace-nowrap opacity-0'} `}>i Love front End develope ..... </h3>
+                                <h1 className="w-full lg:text-8xl md:text-7xl sm:text-6xl text-4xl font-bold custom">sina zarrin</h1>
+                                <h3 className={`${typingEffect ? ' lg:text-[40px] md:text-[30px] sm:text-[20px] text-[15px] font-medium overflow-x-hidden whitespace-nowrap typewriter mt-2' : ' text-[40px] font-medium overflow-x-hidden whitespace-nowrap opacity-0 mt-2'} `}>i love front-end develope ...</h3>
                             </div>
                         </div>
 
