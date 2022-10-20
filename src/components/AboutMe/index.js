@@ -13,8 +13,22 @@ const AboutMe = () => {
         <img src={AboutImage} alt="amoo sina" className='w-40 h-40 rounded-full' />
       </div>
         <div className="w-3/4 text-left mt-12">
-          <h3 className='font-semibold text-3xl mb-5'>Get to know me!</h3>
-          <p className='text-lg'>I like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
+          {/* <h3 className='font-semibold text-3xl mb-5'>Get to know me!</h3> */}
+          <p className='md:text-lg text-md text-[#434343]'>i attracted to programming and 
+            started to read about it around 2020. 
+            Finally, I chose Web Development for 
+            my career.
+            <br/>
+            I learned HTML, CSS and Vanilla 
+            JavaScript then entered 
+            to React World all by self-study with 
+            help of courses and documentations.
+            My vision is to dive deeper in Frontend 
+            Development specially React; Explore 
+            Backend world and become a full
+            stack MERN (MongoDB, Express, 
+            React, NodeJS) developer in future.
+          </p>
         </div>
       <div className="flex justify-center mt-24">
         <div class="arrow"></div>

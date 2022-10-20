@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  body{
+    overflow-x: hidden;
+  }
+
   .will-change-transform {
     will-change: transform;
   }
@@ -47,7 +51,7 @@
 
 
   .typewriter {
-    border-right: .15em solid orange;
+    /* border-right: .15em solid orange; */
     animation:
       typing 5s steps(40, end),
       blink-caret .75s step-end infinite;
