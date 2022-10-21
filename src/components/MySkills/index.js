@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 const MySkills = () => {
@@ -47,7 +48,7 @@ const MySkills = () => {
             <a href='سینا_زرین.pdf' download>
               <button className="bg-white text-[#1b1b1b] sm:py-3.5 sm:px-9 py-2 px-6 sm:mb-0 mb-2 uppercase sm:text-[12px] text-[10px] tracking-[3px] sm:mr-10">Download Resume</button>
             </a>
-          <button type="button" className="bg-violet-500 text-white sm:py-3.5 sm:px-9 py-2 px-6 sm:mb-0 mb-2 uppercase sm:text-[12px] text-[10px] tracking-[3px] ">Contact Me</button>
+          <Link to="/contact" className="bg-violet-500 text-white sm:py-3.5 sm:px-9 py-2 px-6 sm:mb-0 mb-2 uppercase sm:text-[12px] text-[10px] tracking-[3px]">Contact Me</Link>
         </div>
       </div>
     </div>

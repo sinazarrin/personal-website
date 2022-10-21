@@ -24,12 +24,12 @@ const Banner = () => {
 
                             <ul className='sm:flex hidden space-x-6 '>
                                 <li>
-                                    <Link to="#" className="text-white relative group">Home
+                                    <Link to="/" className="text-white relative group">Home
                                         <div className="absolute left-2 w-2/3 h-0.5 bg-white/80 scale-x-0 group-hover:scale-x-100 transition-transform"></div>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="" className='text-white relative group'>Contact
+                                    <Link to="/contact" className='text-white relative group'>Contact
                                         <div className="absolute left-2 w-2/3 h-0.5 bg-white/80 scale-x-0 group-hover:scale-x-100 transition-transform"></div>
                                     </Link>
                                 </li>
@@ -39,7 +39,7 @@ const Banner = () => {
                         <div className='flex items-baseline justify-between'>
                             <div className='text-white uppercase absolute left-[5%] bottom-[8%] leading-[70px]'>
                                 <p className='lg:text-[50px] md:text-[30px] sm:text-[20px] text-[15px] '>i'm</p>
-                                <h1 className="w-full lg:text-8xl md:text-7xl sm:text-6xl text-4xl font-bold custom">sina zarrin</h1>
+                                <h1 className="w-full lg:text-8xl md:text-7xl sm:text-6xl text-[45px] font-bold custom">sina zarrin</h1>
                                 <h3 className={`${typingEffect ? ' lg:text-[40px] md:text-[30px] sm:text-[20px] text-[15px] font-medium overflow-x-hidden whitespace-nowrap typewriter md:mt-2' : ' text-[40px] font-medium overflow-x-hidden whitespace-nowrap opacity-0 mt-2'} `}>i love front-end develope ...</h3>
                             </div>
                         </div>

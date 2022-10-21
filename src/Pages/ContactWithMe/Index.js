@@ -1,20 +1,57 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ContactWithMe = () => {
   return (
         <>
+        <div className='bg-violet-500 z-50'>
+          <nav className='container flex w-full items-center flex-wrap p-2 px-10 justify-between mx-auto z-50'>
+            <div>
+                <h1>
+                    <Link to="/" className='text-white text-[30px]'>Sina Zarin</Link>
+                </h1>
+            </div>        
+            <ul className='sm:flex hidden space-x-6 '>
+                <li>
+                    <Link to="/" className="text-white relative group">Home
+                        <div className="absolute left-2 w-2/3 h-0.5 bg-white/80 scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/contact" className='text-white relative group'>Contact
+                        <div className="absolute left-2 w-2/3 h-0.5 bg-white/80 scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+                    </Link>
+                </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="popup-modal" tabindex="-1" className="flex items-center justify-center h-screen overflow-y-auto overflow-x-hidden fixed  md:top-[0] top-[30%] right-0 left-0 z-10 md:inset-0 h-modal md:h-full">
+          <div className="relative p-4 w-full max-w-md h-full md:h-auto">
+          <div className="relative bg-white rounded-lg shadow-2xl">
+              <div className="p-6 text-center">                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="mx-auto mb-4 w-14 h-14 text-violet-600" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+
+                  <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">This section has not yet been completed</h3>
+                  
+              </div>
+          </div>
+        </div>
+  </div>
       
-      <div
-        class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-900 rounded-lg">
-        <div class="flex flex-col justify-between">
+      <div className="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-900 rounded-lg blur-md shadow-2xl">
+        <div className="flex flex-col justify-between">
           <div>
-            <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
-            <div class="text-gray-700 mt-8">
-              Hate forms? Send us an <span class="underline">email</span> instead.
+            <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
+            <div className="text-gray-700 mt-8">
+              Hate forms? Send us an <span className="underline">email</span> instead.
             </div>
           </div>
-          <div class="mt-8 text-center">
-            <svg class="w-full"
+          <div className="mt-8 text-center">
+            <svg className="w-full"
               id="ae37f038-3a9e-4b82-ad68-fc94ba16af2a" data-name="Layer 1"
               viewBox="0 0 1096 574.74">
               <defs>
@@ -511,25 +548,25 @@ const ContactWithMe = () => {
             </svg>
           </div>
         </div>
-        <div class="">
+        <div className="">
           <div>
-            <span class="uppercase text-sm text-gray-600 font-bold">Full Name</span>
-            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>
+            <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="text" placeholder=""/>
           </div>
-          <div class="mt-8">
-            <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
-            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+          <div className="mt-8">
+            <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
+            <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="text"/>
           </div>
-          <div class="mt-8">
-            <span class="uppercase text-sm text-gray-600 font-bold">Message</span>
+          <div className="mt-8">
+            <span className="uppercase text-sm text-gray-600 font-bold">Message</span>
             <textarea
-              class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+              className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
           </div>
-          <div class="mt-8">
+          <div className="mt-8">
             <button
-              class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+              className="uppercase text-sm font-bold tracking-wide bg-violet-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
               Send Message
             </button>
           </div>
