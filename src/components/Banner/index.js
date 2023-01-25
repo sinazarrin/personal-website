@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
+import Typewriter from 'typewriter-effect';
 
 const Banner = () => {
-    const [typingEffect, setTypingEffect] = useState(false)
-    useEffect(() => {
-        setTimeout(() => {
-        setTypingEffect(!typingEffect)
-      }, typingEffect ? 8000 : 1000)
-    }, [typingEffect])
     
-
     return (
         <div>
             <div className="w-full h-screen bg-[url('images/sandro-katalina-k1bO_VTiZSs-unsplash.jpg')] bg-cover bg-center relative">
@@ -22,14 +16,14 @@ const Banner = () => {
                                 </h1>
                             </div>
 
-                            <ul className='sm:flex hidden space-x-6 '>
+                            <ul className='flex space-x-6 '>
                                 <li>
-                                    <Link to="/" className="text-white relative group">Home
+                                    <Link to="/" className="text-white relative group sm:text-lg text-xs">Home
                                         <div className="absolute left-2 w-2/3 h-0.5 bg-white/80 scale-x-0 group-hover:scale-x-100 transition-transform"></div>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/contact" className='text-white relative group'>Contact
+                                    <Link to="/contact" className='text-white relative group sm:text-lg text-xs'>Contact
                                         <div className="absolute left-2 w-2/3 h-0.5 bg-white/80 scale-x-0 group-hover:scale-x-100 transition-transform"></div>
                                     </Link>
                                 </li>
@@ -39,8 +33,18 @@ const Banner = () => {
                         <div className='flex items-baseline justify-between'>
                             <div className='text-white uppercase absolute left-[5%] bottom-[8%] leading-[70px]'>
                                 <p className='lg:text-[50px] md:text-[30px] sm:text-[20px] text-[15px] '>i'm</p>
-                                <h1 className="w-full lg:text-8xl md:text-7xl sm:text-6xl text-[45px] font-bold custom">sina zarrin</h1>
-                                <h3 className={`${typingEffect ? ' lg:text-[40px] md:text-[30px] sm:text-[20px] text-[15px] font-medium overflow-x-hidden whitespace-nowrap typewriter md:mt-2' : ' text-[40px] font-medium overflow-x-hidden whitespace-nowrap opacity-0 mt-2'} `}>i love front-end develope ...</h3>
+                                <h1 className="w-full lg:text-8xl md:text-7xl sm:text-6xl text-[35px] font-bold custom">sina zarrin</h1>
+                                <Typewriter
+                                    options={{
+                                        autoStart:true,
+                                        loop:true,
+                                        delay:75,
+                                        strings: [
+                                            "I Love Front End Develope...",
+                                            "I'm a Web Developer "
+                                        ]
+                                    }}
+                                />
                             </div>
                         </div>
 

@@ -4,21 +4,21 @@ import { Link } from 'react-router-dom'
 const ContactWithMe = () => {
   return (
         <>
-        <div className='bg-violet-500 z-50'>
+        <div className='bg-violet-500 z-50 relative'>
           <nav className='container flex w-full items-center flex-wrap p-2 px-10 justify-between mx-auto z-50'>
             <div>
                 <h1>
                     <Link to="/" className='text-white text-[30px]'>Sina Zarin</Link>
                 </h1>
             </div>        
-            <ul className='sm:flex hidden space-x-6 '>
+            <ul className='flex space-x-6 '>
                 <li>
-                    <Link to="/" className="text-white relative group">Home
+                    <Link to="/" className="text-white relative group sm:text-lg text-xs">Home
                         <div className="absolute left-2 w-2/3 h-0.5 bg-white/80 scale-x-0 group-hover:scale-x-100 transition-transform"></div>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/contact" className='text-white relative group'>Contact
+                    <Link to="/contact" className='text-white relative group sm:text-lg text-xs'>Contact
                         <div className="absolute left-2 w-2/3 h-0.5 bg-white/80 scale-x-0 group-hover:scale-x-100 transition-transform"></div>
                     </Link>
                 </li>

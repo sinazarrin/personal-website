@@ -18,6 +18,22 @@
     animation: animate 5s linear infinite;
     cursor: context-menu;
   }
+  
+  .Typewriter{
+    font-size: 27px;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .Typewriter{
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .Typewriter{
+      font-size: 15px;
+    }
+  }
 
   @keyframes animate {
 
